@@ -10,7 +10,7 @@ export const genericTableWithSearch = ( props ) => {
 
     return (
         <div className = 'ui-generic-table-with-search-container'>
-            <div className = 'ui-generic-table-with-search-container__heading'> Countries </div>
+            <div className = 'ui-generic-table-with-search-container__heading'> Country wise Statistics </div>
 
             <InputField type='text' placeholder="Enter name of Country" iconPosition = 'left' onChange={ ( value ) => handleSearch( value ) } icon={FaSearch} renderIcon = { () => <FaSearch size={15} color='gray' /> }></InputField>
 
