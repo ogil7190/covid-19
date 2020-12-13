@@ -32,7 +32,7 @@ export class GenericTableWithSearch extends React.Component {
         const searchQuery = trim( value );
         
         if( this.state.searchQuery !== searchQuery ) {
-            const { countries, pagesCount } = this.selectedCountries( searchQuery, this.state.currentIndex );
+            const { countries, pagesCount } = this.selectedCountries( searchQuery, 0 );
             
             this.setState({
                 searchQuery: searchQuery,

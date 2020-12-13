@@ -34,7 +34,7 @@ export class coronaTracker extends React.Component {
         const apiUrl = 'https://api.covid19api.com/summary';
 
         try {
-            await this.sleep( 1000 );
+            await this.sleep( 1500 );
             const response = await axios.get( apiUrl );
             
             console.debug( 'Network Response', response.data );

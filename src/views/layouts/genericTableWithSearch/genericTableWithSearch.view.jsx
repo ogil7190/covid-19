@@ -10,9 +10,18 @@ export const genericTableWithSearch = ( props ) => {
 
     return (
         <div className = 'ui-generic-table-with-search-container'>
-            <div className = 'ui-generic-table-with-search-container__heading'> Country wise Statistics </div>
+            <h1 className = 'ui-generic-table-with-search-container__heading'>
+                {'Country wise Statistics'}
+            </h1>
 
-            <InputField type='text' placeholder="Enter name of Country" iconPosition = 'left' onChange={ ( value ) => handleSearch( value ) } icon={FaSearch} renderIcon = { () => <FaSearch size={15} color='gray' /> }></InputField>
+            <InputField
+                type='text'
+                placeholder="Enter name of Country"
+                iconPosition = 'left'
+                onChange={ ( value ) => handleSearch( value ) }
+                icon={FaSearch}
+                renderIcon = { () => <FaSearch size={15} color='gray' /> }>
+            </InputField>
 
             <TableView {...props} />
             {
@@ -24,6 +33,7 @@ export const genericTableWithSearch = ( props ) => {
                         <div className = { 'ui-generic-table-with-search-container__navigation__leftmost-arrow'} onClick = { handleShowFirstPage }>
                             <FaAngleDoubleLeft size = { 20 } />
                         </div>
+                        
                         <div className = { 'ui-generic-table-with-search-container__navigation__left-arrow'} onClick = { handleShowPreviousPage }>
                             <FaChevronCircleLeft size = { 20 } />
                         </div>
@@ -31,11 +41,12 @@ export const genericTableWithSearch = ( props ) => {
                 }
                 <p className = 'ui-generic-table-with-search-container__navigation__page-number' > { `${currentIndex + 1} of ${pagesCount} pages` }</p>
                 {
-                    currentIndex !== pagesCount-1 &&
+                    currentIndex !== pagesCount - 1 &&
                     <>
                         <div className = { 'ui-generic-table-with-search-container__navigation__right-arrow'} onClick = { handleShowNextPage }>
                             <FaChevronCircleRight size = { 20 } />
                         </div>
+                        
                         <div className = { 'ui-generic-table-with-search-container__navigation__rightmost-arrow'} onClick = { handleShowLastPage }>
                             <FaAngleDoubleRight size = { 20 } />
                         </div>

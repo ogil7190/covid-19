@@ -6,7 +6,7 @@ export const TableView = ( props ) => {
     const { countries = [] } = props;
     
     const columns = [ 'Country', 'TotalConfirmed', 'TotalRecovered', 'TotalDeaths']
-    const columnsHeader = [ 'Country', 'Total Confirmed', 'Total Recovered', 'Total Deaths']
+    const columnsHeader = [ 'Name', 'Confirmed', 'Recovered', 'Deceased']
 
     if( isEmpty( countries ) ) {
         return <span> No Country Found</span>
