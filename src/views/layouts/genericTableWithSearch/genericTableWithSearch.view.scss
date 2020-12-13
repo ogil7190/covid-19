@@ -1,0 +1,41 @@
+.ui-generic-table-with-search-container {
+    &__heading {
+        margin-bottom: 30px;
+        display: flex;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    &__search-bar {
+        display: flex;
+        margin-bottom: 30px;
+        &__icon {
+            margin-right: 20px;
+        }
+    }
+    &__navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__page-number {
+            margin: 20px;
+        }
+        
+        &__right-arrow{ 
+            cursor: pointer;
+        }
+
+        &__rightmost-arrow{ 
+            cursor: pointer;
+            margin-left: 20px;
+        }
+
+        &__left-arrow {
+            cursor: pointer;
+        }
+
+        &__leftmost-arrow {
+            cursor: pointer;
+            margin-right: 20px;
+        }
+    }
+}

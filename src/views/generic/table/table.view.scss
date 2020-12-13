@@ -1,0 +1,60 @@
+.ui-table {
+    &__head {
+        display: flex;
+        height: 45px;
+        background-color: aliceblue;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1px;
+
+        &__cell {
+            height: 44px;
+            display: flex;
+            padding-right: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid lightgray;
+            border-bottom: 0;
+            font-weight: 600;
+            flex: 1;
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        &__row {
+            display: flex;
+            //padding: 15px 25px 7px 14px;
+            background-color: #fff;
+            height: 66px;
+            align-items: center;
+            border-bottom: 1px solid lightgray;
+            &__cell {
+                flex: 1 0 auto;
+                text-align: start;
+                padding-right: 10px;
+                height: 100%;
+                border: 1px solid lightgray;
+                border-bottom: 0;
+                width: 220px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+
+                // height: 44px;
+                // flex: 1 0 auto;
+                // display: flex;
+                // padding-right: 10px;
+                // width: 100px;
+
+                // border: 1px solid grey;
+                // width: 30px;
+                // margin: 10px;
+                // padding: 10px;
+            }
+        }
+    }
+}

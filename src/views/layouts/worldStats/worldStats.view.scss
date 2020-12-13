@@ -1,0 +1,99 @@
+.ui-world-stats-view {
+    display: flex;
+    width: 100%;
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 40%;
+    }
+
+    &__graph {
+        display: flex;
+        flex-basis: 60%;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+        display: flex;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    
+    &__total-patients {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 2px solid #dfdfdf;
+        width: 70%;
+        align-items: flex-start;
+
+        &__title {
+            font-size: 22px;
+            font-weight: 300;
+            margin: 10px;
+        }
+
+        &__value {
+            font-size: 26px;
+            font-weight: 500;
+            margin: 10px;
+        }
+    }
+
+    &__stats-container {
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+
+        &__table {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 15px;
+            margin-right: 110px;
+
+            &__item {
+                margin: 10px;
+            }
+
+            &__total-active{
+                display: flex;
+                width: 120px;
+                align-items: center;
+
+                &__box {
+                    width: 10px;
+                    height: 10px;
+                    background-color: #3273cf;
+                    margin-right: 30px;
+                }
+            }
+            &__total-recovered {
+                display: flex;
+                width: 120px;
+                align-items: center;
+
+                &__box {
+                    width: 10px;
+                    height: 10px;
+                    background-color: #6aa25b;
+                    margin-right: 30px;
+                }
+            }
+            &__total-deaths {
+                display: flex;
+                width: 120px;
+                align-items: center;
+    
+                &__box {
+                    width: 10px;
+                    height: 10px;
+                    background-color: #b74d3d;
+                    margin-right: 30px;
+                }
+    
+            }
+        }
+    }
+    
+}
