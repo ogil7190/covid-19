@@ -2,7 +2,8 @@
 
 ![Screenshot](src/images/preview.png?raw=true "Covid-19 World Tracks Image")
 
-API USED ---> [Covid-19 API](https://api.covid19api.com/summary)
+*API USED FOR DATA* --> [Covid-19 API](https://api.covid19api.com/summary)
+### [VIEW LIVE VERSION](https://world-covid.herokuapp.com/)
 
 ## How to Run on Local System:
 
